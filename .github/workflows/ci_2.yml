@@ -29,8 +29,8 @@ jobs:
       #    password: ${{ secrets.PYPI_API_TOKEN }}
       - name: Create Release tag
         id: create-tag
-        run: |
-		  cat .git/config
+        run: cat .git/config
+
       #- name: Make new release
       #  uses: ncipollo/release-action@v1
       #  with:
