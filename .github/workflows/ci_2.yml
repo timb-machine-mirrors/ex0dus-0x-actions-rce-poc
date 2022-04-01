@@ -1,4 +1,4 @@
-name: Release SDK if needed
+name: Test
 
 on:
   push:
