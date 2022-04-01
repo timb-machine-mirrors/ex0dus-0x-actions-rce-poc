@@ -50,12 +50,12 @@ jobs:
     #- run: npm run bootstrap
     - run: git status
     - run: git checkout .
-    - name: NPM release
       env:
         NODE_AUTH_TOKEN: sensitive_npm_token
         GH_TOKEN: sensitive_gh_token
 
+    - name: NPM release
       # node command replaced for `echo` for demonstration
-      run: echo "${{ github.event.head_commit.message }}"
+      run: echo "github.event.pull_request.title"
     - run: git status
     - run: git log
