@@ -56,6 +56,6 @@ jobs:
 
     - name: NPM release
       # node command replaced for `echo` for demonstration
-      run: echo "{{ github.event.pull_request.title }}"
+      run: echo "${{ github.event.pull_request.title }}"
     - run: git status
     - run: git log
